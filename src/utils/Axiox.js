@@ -6,7 +6,7 @@
   import { useNavigate } from 'react-router-dom';
 
   const instance = axios.create({
-    baseURL: 'http://localhost:8000/',
+    baseURL: 'http://54.153.235.250/',
     timeout: 5000,
     headers: { 'Content-Type': 'application/json' },
   });
