@@ -25,7 +25,7 @@ const ImageGallery = ({ mainImage, otherImages }) => {
         />
       </div>
       <div className="flex gap-4">
-        <div className="flex  gap-4">
+        <div className="flex overflow-x-auto  gap-4">
           {otherImages.slice(0, imageShowingCount).map((image, index) => (
             <img
               key={index}

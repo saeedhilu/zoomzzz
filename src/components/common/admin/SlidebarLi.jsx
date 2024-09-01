@@ -41,7 +41,7 @@ const Sidebar = ({ title, menuItems, profile, role }) => {
       </div>
 
       <aside
-        className={`overflow-y-auto fixed top-0 left-0 w-64 h-screen bg-white border-r-2 border-gray-200 shadow-xl transition-transform transform z-40  ${
+        className={`overflow-y-auto fixed  top-0 left-0 w-64 h-screen bg-white border-r-2 border-gray-200 shadow-xl transition-transform transform z-40  ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } lg:translate-x-0 lg:relative lg:w-64 lg:h-screen lg:border-none lg:shadow-none lg:flex lg:flex-col lg:items-start`}
       >

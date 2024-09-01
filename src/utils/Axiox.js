@@ -7,7 +7,7 @@
 
   const instance = axios.create({
     baseURL: 'https://api.zoomzzz.live',
-    timeout: 5000,
+    timeout: 10000,
     headers: { 'Content-Type': 'application/json' },
   });
 

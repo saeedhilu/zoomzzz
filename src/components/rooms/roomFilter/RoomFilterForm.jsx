@@ -728,7 +728,7 @@ const RoomFilter = () => {
         </div>
       </div>
       <div
-        className={`fixed top-0 left-0 w-72 bg-white p-4 border border-gray-300 rounded h-full transform transition-transform overflow-y-auto ${
+        className={`fixed top-0 z-50 left-0 w-72 bg-white p-4 border border-gray-300 rounded h-full transform transition-transform overflow-y-auto ${
           showFilter
             ? "translate-x-0 shadow-gray-600 shadow-xl"
             : "-translate-x-full"
