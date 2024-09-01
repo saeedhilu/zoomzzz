@@ -14,7 +14,11 @@ const Spinner = () => {
         wrapperClass=""
         visible={true}
       /> */}
-      <img className='' src={loader} alt="" />
+      <img
+        className="w-16 h-16 md:w-24 md:h-24 lg:w-32 lg:h-32"
+        src={loader}
+        alt="Loading..."
+      />
     </div>
   );
 };
