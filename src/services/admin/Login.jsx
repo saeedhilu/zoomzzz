@@ -4,7 +4,7 @@ import instance from "../../utils/Axiox";
 
 const adminLogin = async (username, password) => {
   try {
-    const response = await instance.post("login-admin/", {
+    const response = await instance.post("/login-admin/", {
       username: username,
       password: password,
     });
