@@ -4,7 +4,7 @@ import getSummaryStatics from "../../../services/vendor/VendorStatics";
 const RecentBookings = () => {
   const [recentBookings, setRecentBookings] = useState([]);
 
-  const localHost = "http://127.0.0.1:8000/";
+  const localHost = "https://api.zoomzzz.live/";
   console.log("receb booking data is :", recentBookings);
 
   const fetchData = async () => {

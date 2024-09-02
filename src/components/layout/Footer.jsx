@@ -43,7 +43,7 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-semibold mb-4">CONTACT INFO</h3>
           <ul className="text-gray-600 space-y-2">
-            <li>Phone: +91 8113985644</li>
+            <li>Phone: +91 8113986544</li>
             <li>Email: saeedmoozhikkal@gmail.com</li>
             <li>Location: Kozhkode, Kerala, INDIA</li>
           </ul>

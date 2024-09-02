@@ -17,7 +17,7 @@ const RoomType = () => {
   const [deleteId, setDeleteId] = useState(null);
   const [deleteName, setDeleteName] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-  const localhost = "http://127.0.0.1:8000/";
+  const localhost = "https://api.zoomzzz.live/";
 
   const fetchRoomTypes = async () => {
     try {

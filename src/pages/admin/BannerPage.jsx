@@ -19,7 +19,7 @@ const Banner = () => {
   const [deleteId, setDeleteId] = useState(null);
   const [deleteTitle, setDeleteTitle] = useState("");
 
-  const localhost = "http://127.0.0.1:8000/";
+  const localhost = "https://api.zoomzzz.live/";
 
   const fetchBanner = async () => {
     try {

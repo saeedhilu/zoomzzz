@@ -17,7 +17,7 @@ const Categories = () => {
   const [isConfirmModalOpen, setIsConfirmModalOpen] = useState(false);
   const [deleteId, setDeleteId] = useState(null);
   const [deleteName, setDeleteName] = useState("");
-  const localhost = "http://127.0.0.1:8000/";
+  const localhost = "https://api.zoomzzz.live/";
   console.log('====================================');
   console.log('',categories);
   console.log('====================================');

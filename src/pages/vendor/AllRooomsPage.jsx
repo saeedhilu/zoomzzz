@@ -48,7 +48,7 @@ const AllRooms = () => {
   const [roomTypes, setRoomTypes] = useState([]);
   const [imageShow, setImageShow] = useState(false);
   const [selectedImage, setSelectedImage] = useState("");
-  const localHost = "http://127.0.0.1:8000/";
+  const localHost = "https://api.zoomzzz.live/";
 
 console.log('room from statte',rooms);
 console.log('room from statte',amenities);
@@ -90,11 +90,11 @@ console.log('room from statte',roomTypes);
   };
   console.log('====================================');
   console.log('rooms is :',rooms);
-  console.log('rooms is :',bedTypes);
-  console.log('rooms is :',roomTypes);
-  console.log('rooms is :',categories);
-  console.log('rooms is :',cities);
-  console.log('rooms is :',countries);
+  console.log('bedtyope is :',bedTypes);
+  console.log('roomtyhpe is :',roomTypes);
+  console.log('catogaeries is :',categories);
+  console.log('cities is :',cities);
+  console.log('ciountries is :',countries);
   console.log('====================================');
 
 
@@ -202,21 +202,11 @@ console.log('room from statte',roomTypes);
       formDataObj.append("image3", formData.image3);
       formDataObj.append("image4", formData.image4);
       formDataObj.append("image5", formData.image5);
-      if (formData.amenities.length > 1) {
-        for (let i = 1; i < formData.amenities.length; i++) {
-          console.log("====================================");
-          console.log("form data amenity :", formData.amenities[i]);
-          console.log("====================================");
-          console.log(
-            "====================================",
-            formData.amenities.length
-          );
-          formDataObj.append("amenities", formData.amenities[i]);
-        }
-      } else {
-        console.log("issie");
-        formDataObj.append("amenities", formData.amenities);
-      }
+       if (formData.amenities && formData.amenities.length > 0) {
+      formData.amenities.forEach((amenity) => {
+        formDataObj.append("amenities", amenity);
+      });
+    }
       
       }else {
 

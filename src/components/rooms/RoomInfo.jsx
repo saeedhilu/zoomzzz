@@ -117,7 +117,7 @@ const RoomInfo = ({ room }) => {
           <h1 className="text-3xl text-gray-800 mt-4 font-bold">{room.name}</h1>
           <p className="text-gray-600 mt-2 flex items-center font-medium">
             <FaMapMarkerAlt className="mr-2" />
-            {`${room.location.country}, ${room.location.city}, ${room.location.name}`}
+            {`${room.location.country_name}, ${room.location.city_name}, ${room.location.name}`}
           </p>
         </div>
         <div>

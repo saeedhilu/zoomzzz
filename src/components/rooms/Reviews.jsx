@@ -24,7 +24,7 @@ const Reviews = ({ reviews, averageRating }) => {
             <div className="rounded-full overflow-hidden w-10 h-10">
               {review.user__image && review.user__image !== 'default.jpg' ? (
                 <img
-                  src={`http://127.0.0.1:8000/images/${review.user__image}`}
+                  src={`https://api.zoomzzz.live/images/${review.user__image}`}
                   alt={`${review.user__username}'s profile`}
                   className="object-cover w-full h-full"
                 />
