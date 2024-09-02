@@ -5,8 +5,8 @@ import { clearAuth, updateToken } from '../redux/slices/authSlice';
 import { toast } from 'react-toastify';
 
 const instance = axios.create({
-  baseURL: 'http://127.0.0.1:8000/',
-  timeout: 90000,
+  baseURL: 'https://api.zoomzzz.live/',
+  timeout: 10000,
   headers: { 'Content-Type': 'application/json' },
 });
 
