@@ -6,6 +6,9 @@ import instance from "../../utils/Axiox"
 const getAmenity=async () =>{
     try {
         const response = await instance.get('amenities/')
+        console.log('====================================');
+        console.log('amewnity',response);
+        console.log('====================================');
         return response.data
         
     } catch (error) {

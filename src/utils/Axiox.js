@@ -47,8 +47,8 @@ const refreshToken = async () => {
     store.dispatch(clearAuth()); // Clear auth state
     persistor.purge(); // Clear persisted Redux state
 
-    // Use window.location.href for navigation after session expiration
-    window.location.href = '/session-expired';  // Redirect to session expired page
+
+    window.location.href = '/session-expired';  
 
     return null;
   }

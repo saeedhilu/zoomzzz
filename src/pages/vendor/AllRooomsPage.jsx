@@ -51,6 +51,12 @@ const AllRooms = () => {
   const localHost = "http://127.0.0.1:8000/";
 
 console.log('room from statte',rooms);
+console.log('room from statte',amenities);
+console.log('room from statte',categories);
+console.log('room from statte',cities);
+console.log('room from statte',bedTypes);
+console.log('room from statte',roomTypes);
+
 
   const fetchData = async () => {
     try {
@@ -84,6 +90,11 @@ console.log('room from statte',rooms);
   };
   console.log('====================================');
   console.log('rooms is :',rooms);
+  console.log('rooms is :',bedTypes);
+  console.log('rooms is :',roomTypes);
+  console.log('rooms is :',categories);
+  console.log('rooms is :',cities);
+  console.log('rooms is :',countries);
   console.log('====================================');
 
 
