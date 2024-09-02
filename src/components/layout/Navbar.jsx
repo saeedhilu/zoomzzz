@@ -61,7 +61,7 @@ const Navbar = () => {
           className="hidden md:inline-block px-4 py-2 text-sm font-semibold text-white bg-gray-500 h-12 hover:bg-gray-600 rounded-3xl cursor-pointer"
           onClick={handleHost}
         >
-          Become A Host
+          Be A Host
         </button>
 
         <div className="flex bg-gray-500 rounded-3xl relative">
