@@ -268,16 +268,9 @@ const GenericModal = ({
 
     if (type === "checkbox") {
       setFormData((prev) => {
-        console.log("====================================");
-        console.log("pre ", prev);
-        console.log("====================================");
-        console.log("====================================");
-        console.log(prev[name]);
-        console.log("====================================");
+        
         const selectedOptions = prev[name] || [];
-        console.log("====================================");
-        console.log("selected option is :", selectedOptions);
-        console.log("====================================");
+        
         if (checked) {
           console.log("checked");
           return { ...prev, [name]: [...selectedOptions, value] };
@@ -332,9 +325,10 @@ const GenericModal = ({
         <h2 className="text-lg font-bold text-gray-900">{title}</h2>
         <form onSubmit={handleSubmit}>
           {fields.map((field, index) => (
+            
             <div key={index} className="mt-4">
               <label className="block mb-2 text-sm font-medium text-gray-700">
-                {field.label}:
+                
                 {field.type === "textarea" ? (
                   <textarea
                     name={field.name}
@@ -364,8 +358,7 @@ const GenericModal = ({
                 ) : field.type === "checkbox-group" ? (
                   field.options.map((option) => (
                     <div key={option.id} className="flex items-center">
-                      <h1>{formData[field.name]}</h1>
-                      <h1>{formData[field.name]}</h1>
+                   
                       <input
                         type="checkbox"
                         name={field.name}
@@ -396,37 +389,21 @@ const GenericModal = ({
                   </>
                 ) : field.type === "radio-group" ? (
                   <div key={index}>
-                    <label>{field.label}</label>
-                    {Object.entries(field.options).map(([value, label]) => (
-                      <div key={value}>
-                        {/* <h1>{value}</h1> */}
-                        {/* <h1>frm name is :{formData[field.name]}</h1> */}
-
-                        {console.log(
-                          "field name from fomr data  is :",
-                          formData[field.name]
-                        )}
-                        {/* {console.log('field name is :',field.name)} */}
-                        {/* {console.log('field name from . is :',formData.field.name ? 'und':'illa')} */}
-
-                        {/* <h1> availability : {formData.availability ? 'true ':'false '}</h1>
-                      <h1> pet_allowed :{formData.pet_allowed ? 'true ':'false '}</h1> */}
-                      {console.log('  1',formData[field.name] === (value === 'yes'))}
-                      {console.log('2', value)}
-                      {console.log('3',formData[field.name] )}
-                        <label>
-                          <input
-                            type="radio"
-                            name={field.name}
-                            value={value}
-                            checked={formData[field.name] === (value === 'yes')}
-                            onChange={handleChange}
-                          />
-                          {label}
-                        </label>
-                      </div>
-                    ))}
-                  </div>
+      <label className="block mb-2 text-sm font-medium text-gray-700">{field.label}</label>
+      {Object.entries(field.options).map(([value, label]) => (
+        <div key={value} className="flex items-center">
+          <input
+            type="radio"
+            name={field.name}
+            value={value}
+            checked={formData[field.name] === value}
+            onChange={handleChange}
+            className="mr-2"
+          />
+          <label className="text-gray-700">{label}</label>
+        </div>
+      ))}
+    </div>
                 ) : (
                   <input
                     type={field.type}

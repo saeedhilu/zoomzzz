@@ -598,7 +598,7 @@ console.log('room from statte',roomTypes);
           onSubmit={handleSubmit}
           initialData={selectedRoom || {}}
           isCreating={isCreating}
-          title={isCreating ? "Create New Category" : "Edit Category"}
+          title={isCreating ? "Create New Room" : "Edit Room"}
           fields={modalFields}
         />
       )}
