@@ -57,7 +57,7 @@ const TopRatedRooms = () => {
                   <h3 className="text-lg font-semibold">{room.name}</h3>
                 </div>
                 <p className="text-gray-600 mb-2">
-                  {room.location.name}, {room.location.city_name},{room.location.country_name}
+                  {room.location.name}, {room.location.city},{room.location.country}
                 </p>
                 <p className="text-gray-600">
                   {room.price_per_night} per night
