@@ -417,7 +417,7 @@ const RoomList = () => {
                   <Carousel
                     showThumbs={false}
                     showStatus={false}
-                    autoPlay
+                    autoPlay={false}
                     infiniteLoop
                     transitionTime={500}
                     interval={3000}
