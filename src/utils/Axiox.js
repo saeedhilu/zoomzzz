@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 
 const instance = axios.create({
   baseURL: 'https://api.zoomzzz.live/',
-  timeout: 10000,
+  
   headers: { 'Content-Type': 'application/json' },
 });
 
