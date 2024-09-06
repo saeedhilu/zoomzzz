@@ -9,14 +9,14 @@ const Amenities = ({ amenities }) => {
       </h2>
       <div className=" mt-2">
         <div className="flex flex-wrap gap-10">
-        {amenities.slice(0, 3).map((amenity) => (
-          <div key={amenity.id} className="flex items-center mr-4 mb-2 ">
-            <img
+        {amenities.slice(0, 3).map((amenity,id) => (
+          <div key={id} className="flex items-center mr-4 mb-2 ">
+            {/* <img
               src={amenity.image}
               alt={amenity.name}
               className="w-12 h-12 mt-3 "
-            />
-            <span className="ml-4 font-semibold" >{amenity.name}</span>
+            /> */}
+            <span className="ml-4 font-semibold" >{amenity}</span>
           </div>
         ))}
 
